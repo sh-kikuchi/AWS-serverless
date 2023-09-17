@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作成フォーム</title>
+</head>
+<body>
+  <h1>作成フォーム画面</h1>
+  <div>
+    <label for="price">PRICE</label>
+    <input id="price"type="text" name="price" placeholder="整数で入力してください" required>
+  </div>
+  <div>
+    <label for="name">NAME</label>
+    <input id="name" type="text" name="name" placeholder="テキストで入力してください" required>
+  </div>
+  <button onclick="put()">CREATE</button>
+
+  <!-- Common（Config） -->
+  <script src="js/common.js"></script>
+  <!-- Auth -->
+  <script src="js/auth/aws-sdk.min.js"></script>
+  <script src="js/auth/aws-cognito-sdk.min.js"></script>
+  <script src="js/auth/amazon-cognito-identity.min.js"></script>
+  <script src="js/auth/getSession.js"></script>
+  <!-- Api -->
+  <script src="js/api/put.js"></script>
+</body>
+</html>
